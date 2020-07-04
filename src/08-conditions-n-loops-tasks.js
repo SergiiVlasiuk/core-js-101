@@ -452,8 +452,6 @@ function getMatrixProduct(m1, m2) {
  *
  */
 function evaluateTicTacToePosition(pos) {
-  // todo remove duplicates
-  console.log('remove duplicates');
   if (pos.some((row) => row.length === 3 && row.every((item) => item === 'X'))) return 'X';
   if (pos.some((row) => row.length === 3 && row.every((item) => item === '0'))) return '0';
   const diag1 = [];
